@@ -30,7 +30,7 @@ public class ExceptionExam02 {
 	private static int convert(String str) throws IllegalArgumentException {
 		//여기를 작성하십시오.
 		int result = 0;
-		if(str.equals(null) | str.length() == 0) {
+		if(str==null | str.length() == 0) {
 			throw new IllegalArgumentException();
 		}else {
 			result = Integer.parseInt(str);
